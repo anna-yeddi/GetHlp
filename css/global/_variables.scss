@@ -1,0 +1,20 @@
+// _variables.scss
+$colors: ( // Color-map:
+  primary: #0c6271,
+  primary-light: lighten(#0c6271, 55%),
+  primary-dark: darken(#0c6271, 55%),
+  accent: #e18377,
+  accent-light: lighten(#e18377, 30%)
+);
+
+$padding: 15px;
+$borders: 15px;
+$shadow: 0 10px 30px rgba(0,0,0,.2); // x, y, blur, color
+
+
+@function color($color-name) { // faster access to map-get
+  @return map-get($colors, $color-name)
+}
+
+$tablet: 680px; // responsive breakpoints
+$desktop: 840px;

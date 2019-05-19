@@ -1,0 +1,31 @@
+// _button.scss
+@mixin button {
+  color: color(accent-light);
+  background-color: color(accent);
+  border-radius: $borders;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  display: block;
+  width: 70%;
+  margin: 50px auto 0 auto;
+  padding: $padding;
+  cursor: pointer;
+  transition: transform .5s;
+  box-shadow: $shadow;
+
+  &:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  @include tablet {
+    width: 50%;
+  }
+
+  @include desktop {
+    width: 70%;
+    display: inline-block;
+    padding: $padding $padding * 3;
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "gethlp",
+  "version": "1.0.0",
+  "description": "Your Personal Assistant App",
+  "main": "index.html",
+  "dependencies": {
+    "autoprefixer": "^9.5.1",
+    "cssnano": "^4.1.10",
+    "grunt-contrib-watch": "^1.1.0",
+    "normalize.css": "^8.0.1",
+    "pixrem": "^5.0.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-jshint": "^2.1.0",
+    "grunt-contrib-nodeunit": "^2.0.0",
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-postcss": "^0.9.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass css/main.scss:css/main.css",
+    "scss--watch": "sass --watch css/main.scss:css/main.css --sourcemap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m3ta007/GetHlp.git"
+  },
+  "author": "Anna Kova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m3ta007/GetHlp/issues"
+  },
+  "homepage": "https://weDare.tech/GetHlp"
+}

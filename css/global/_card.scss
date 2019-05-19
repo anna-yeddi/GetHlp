@@ -1,0 +1,52 @@
+// _card.scss
+@mixin card {
+  width: 80%;
+  // background: white;
+  background: color(accent-light);
+  color: color(primary-dark);
+  padding: 20px;
+  margin: 1em auto;
+  border-radius: $borders;
+  box-shadow: $shadow;
+
+  @include tablet {
+    width: 60%;
+  }
+
+  @include desktop {
+    grid-area: card;
+    height: fit-content;
+    align-self: center;
+    margin: 1em;
+    width: 75%;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0; padding: 0;
+
+    li {
+      margin-bottom: 10px;
+
+      span {
+        position: absolute;
+        // content: ''; // if the "before" used
+        width: 30px;
+        height: 30px;
+        background-color: color(primary);
+        filter: opacity(50%);
+        border-radius: 50%; // make it a circle
+        margin-top: 4px;
+        margin-right: 40px;
+      }
+
+      strong {
+        display: inline-block;
+        // margin-left: min(40px);
+        margin-left: 40px;
+        margin-top: 10px;
+        font-weight: 600;
+      }
+    }
+  }
+}
