@@ -8,7 +8,8 @@
     "cssnano": "^4.1.10",
     "grunt-contrib-watch": "^1.1.0",
     "normalize.css": "^8.0.1",
-    "pixrem": "^5.0.0"
+    "pixrem": "^5.0.0",
+    "websocket-extensions": "^0.1.4"
   },
   "devDependencies": {
     "grunt": "^1.0.4",
